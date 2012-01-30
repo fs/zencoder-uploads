@@ -10,7 +10,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'facebox-rails'
 gem 'carrierwave'
+gem 'fog'
+gem 'zencoder'
 
 group :development, :test do
   gem 'sqlite3'
@@ -22,7 +25,7 @@ group :test do
   gem 'database_cleaner'
   gem 'spork', '> 0.9.0.rc'
   gem 'guard-rspec'
-  gem 'guard-spork'
+  #gem 'guard-spork'
   gem 'rb-fsevent'
 end
 

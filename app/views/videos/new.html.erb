@@ -1,0 +1,21 @@
+<h1>Upload a video</h1>
+
+<%= form_for :video, url: videos_path, html: { id: 'uploader' } do |f| %>
+  <span id="file_container">
+    <%= f.file_field :original_file %>
+  </span>
+  <%= f.submit %>
+<% end %>
+
+<div id="status"></div>
+
+<div id="progress">
+  <div id="progressbar">
+    <p>Please wait for your upload to complete</p>
+    <div class="container">
+      <div class="bar"></div>
+      <div class="label"></div>
+    </div>
+  </div>
+</div>
+
